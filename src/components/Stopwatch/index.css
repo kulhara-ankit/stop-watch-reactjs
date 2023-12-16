@@ -1,0 +1,146 @@
+/* Write CSS here */
+body {
+  box-sizing: border-box;
+  margin: 0px;
+}
+.bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+  margin-left: 250px;
+}
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stopwatch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 310px;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0px 4px 40px rgba(23, 31, 70, 0.16);
+}
+.heading {
+  font-size: 38px;
+  font-family: 'Roboto';
+  font-weight: 800;
+  color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .app-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin-left: 25px;
+  }
+  .heading {
+    font-size: 22px;
+    font-family: 'Roboto';
+    font-weight: 800;
+    color: #333333;
+  }
+  .clock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .stopwatch-container {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.timer-logo {
+  display: flex;
+  flex-direction: row;
+}
+.timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.heading-timer {
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 800;
+  color: #333333;
+}
+.timer-image {
+  margin-right: 8px;
+}
+.timer-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 10px;
+  }
+}
+
+.start-button {
+  background-color: #1db05f;
+  margin-right: 16px;
+}
+
+.stop-button {
+  background-color: #ef0d36;
+  margin-right: 16px;
+}
+
+.reset-button {
+  background-color: #eaa800;
+}
